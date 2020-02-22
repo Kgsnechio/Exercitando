@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificador de idades</title>
+    <link rel="stylesheet" href="style.css"> <!-- Faz a ligação com arquivo css-->  
+</head>
+<body> 
+    <!--body com semantica-->
+    <header> <!-- cabeçalho -->
+        <h1>Verificador de idades</h1>
+    </header>
+    <section> <!-- sessão    -pode ter uma semantica- -->
+        <div id = "conteudotxt">
+            <p>Qual o ano de nascimento? <input type='number' id='anonas' min='0' width='25px'></p>
+            <p>Sexo:
+                <input type="radio" name='radsex' value="Masculino" id='Masc' checked>
+                <label for='Masc'>Masculino</label>
+                <input type="radio" name='radsex' value="Feminino" id='Femi'>
+                <label for='Femi'>Feminino</label>
+            </p>
+            <input type="button" value='verificar' onclick='verificar()'>
+        </div>
+        <div id = "res">
+            respostas aqui...
+        </div>
+    </section>
+    <footer>                <!-- Roda pé-->
+        <p>developed by<br>André Nechio&reg;</p>
+    </footer>
+    <script src="script.js"></script> <!-- faz ligação com arquivo java script-->
+</body>
+</html>
